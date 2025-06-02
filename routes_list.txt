@@ -1,0 +1,74 @@
+
+  GET|HEAD        / ............................................................................................................ public.products.index › PublicProductController@index
+  GET|HEAD        admin/analytics ............................................................................................ admin.analytics.index › Admin\AnalyticsController@index
+  GET|HEAD        admin/analytics/store ...................................................................................... admin.analytics.store › Admin\AnalyticsController@store
+  GET|HEAD        admin/analytics/users ...................................................................................... admin.analytics.users › Admin\AnalyticsController@users
+  GET|HEAD        admin/categories ........................................................................................... admin.categories.index › Admin\CategoryController@index
+  POST            admin/categories ........................................................................................... admin.categories.store › Admin\CategoryController@store
+  GET|HEAD        admin/categories/create .................................................................................. admin.categories.create › Admin\CategoryController@create
+  GET|HEAD        admin/categories/{category} .................................................................................. admin.categories.show › Admin\CategoryController@show
+  PUT|PATCH       admin/categories/{category} .............................................................................. admin.categories.update › Admin\CategoryController@update
+  DELETE          admin/categories/{category} ............................................................................ admin.categories.destroy › Admin\CategoryController@destroy
+  GET|HEAD        admin/categories/{category}/edit ............................................................................. admin.categories.edit › Admin\CategoryController@edit
+  GET|HEAD        admin/dashboard .................................................................................................. admin.dashboard › Admin\DashboardController@index
+  GET|HEAD        admin/reports/inventory ................................................................................. admin.reports.inventory › Admin\ReportController@inventory
+  GET|HEAD        admin/reports/sales ............................................................................................. admin.reports.sales › Admin\ReportController@sales
+  GET|HEAD        admin/reviews ......................................................................................... admin.reviews.index › Admin\ReviewManagementController@index
+  POST            admin/reviews/{review}/approve .................................................................... admin.reviews.approve › Admin\ReviewManagementController@approve
+  PUT             admin/reviews/{review}/approve .................................................................... admin.reviews.approve › Admin\ReviewManagementController@approve
+  POST            admin/reviews/{review}/reject ....................................................................... admin.reviews.reject › Admin\ReviewManagementController@reject
+  DELETE          admin/reviews/{review}/reject ....................................................................... admin.reviews.reject › Admin\ReviewManagementController@reject
+  GET|HEAD        admin/settings ........................................................................................... admin.settings.index › Admin\SiteSettingsController@index
+  PUT             admin/settings ......................................................................................... admin.settings.update › Admin\SiteSettingsController@update
+  GET|HEAD        admin/users ............................................................................................... admin.users.index › Admin\UserManagementController@index
+  GET|HEAD        api/user ........................................................................................................................................................... 
+  GET|HEAD        cart ............................................................................................................................. cart.index › CartController@index
+  POST            cart/add/{product} ................................................................................................................... cart.add › CartController@add
+  POST            cart/remove/{id} ............................................................................................................... cart.remove › CartController@remove
+  POST            checkout ................................................................................................................... cart.checkout › CartController@checkout
+  GET|HEAD        confirm-password ........................................................................................ password.confirm › Auth\ConfirmablePasswordController@show
+  POST            confirm-password .......................................................................................................... Auth\ConfirmablePasswordController@store
+  GET|HEAD        dashboard ...................................................................................................................... dashboard › RedirectController@home
+  POST            email/verification-notification ............................................................. verification.send › Auth\EmailVerificationNotificationController@store
+  GET|HEAD        forgot-password ......................................................................................... password.request › Auth\PasswordResetLinkController@create
+  POST            forgot-password ............................................................................................ password.email › Auth\PasswordResetLinkController@store
+  GET|HEAD        login ........................................................................................................... login › Auth\AuthenticatedSessionController@create
+  POST            login .................................................................................................................... Auth\AuthenticatedSessionController@store
+  POST            logout ........................................................................................................ logout › Auth\AuthenticatedSessionController@destroy
+  GET|HEAD        my-orders ..................................................................................................................... orders.index › OrderController@index
+  GET|HEAD        my-orders/{order} ............................................................................................................... orders.show › OrderController@show
+  GET|HEAD        notifications ................................................................................................... notifications.index › NotificationController@index
+  POST            notifications/mark-all-read ..................................................................... notifications.mark-all-read › NotificationController@markAllAsRead
+  DELETE          notifications/{notification} ................................................................................ notifications.destroy › NotificationController@destroy
+  POST            notifications/{notification}/mark-as-read ........................................................... notifications.mark-as-read › NotificationController@markAsRead
+  PUT             password .......................................................................................................... password.update › Auth\PasswordController@update
+  GET|HEAD        products .................................................................................................................. products.index › ProductController@index
+  POST            products .................................................................................................................. products.store › ProductController@store
+  GET|HEAD        products/create ......................................................................................................... products.create › ProductController@create
+  POST            products/process-upload .................................................................................. products.process-upload › ProductController@processUpload
+  GET|HEAD        products/upload/csv ............................................................................................. products.upload › ProductController@showUploadForm
+  GET|HEAD        products/{product} ............................................................................................. public.products.show › PublicProductController@show
+  PUT             products/{product} ...................................................................................................... products.update › ProductController@update
+  DELETE          products/{product} .................................................................................................... products.destroy › ProductController@destroy
+  GET|HEAD        products/{product}/edit ..................................................................................................... products.edit › ProductController@edit
+  GET|HEAD        products/{product}/reviews .................................................................................................. reviews.index › ReviewController@index
+  POST            products/{product}/reviews .................................................................................................. reviews.store › ReviewController@store
+  GET|HEAD        profile ...................................................................................................................... profile.edit › ProfileController@edit
+  PATCH           profile .................................................................................................................. profile.update › ProfileController@update
+  DELETE          profile ................................................................................................................ profile.destroy › ProfileController@destroy
+  GET|HEAD        register ........................................................................................................... register › Auth\RegisteredUserController@create
+  POST            register ....................................................................................................................... Auth\RegisteredUserController@store
+  POST            reset-password ................................................................................................... password.store › Auth\NewPasswordController@store
+  GET|HEAD        reset-password/{token} .......................................................................................... password.reset › Auth\NewPasswordController@create
+  GET|HEAD        reviews/create ............................................................................................................ reviews.create › ReviewController@create
+  GET|HEAD        search ............................................................................................................................. search › SearchController@index
+  GET|HEAD        seller/orders ......................................................................................... seller.orders.index › Seller\OrderManagementController@index
+  GET|HEAD        seller/orders/{order} ................................................................................... seller.orders.show › Seller\OrderManagementController@show
+  PATCH           seller/orders/{order}/status ........................................................... seller.orders.update-status › Seller\OrderManagementController@updateStatus
+  GET|HEAD        storage/{path} ....................................................................................................................................... storage.local
+  GET|HEAD        up ................................................................................................................................................................. 
+  GET|HEAD        verify-email .......................................................................................... verification.notice › Auth\EmailVerificationPromptController
+  GET|HEAD        verify-email/{id}/{hash} .......................................................................................... verification.verify › Auth\VerifyEmailController
+
+                                                                                                                                                                   Showing [70] routes
+
